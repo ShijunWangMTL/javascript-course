@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Flickr Photos</title>
+    <link rel="stylesheet" href="search_photo.css" type="text/css">
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            var searchTerm;    // hold tags entered by user, to build url
+            $("#btnSearch").click(function(){
+                searchTerm = "";
+                if ($("#search").val() == "") {
+                    alert("You must enter one or more tags!");
+                } else {
+                    searchTerm = $("#search").val();
+
+                    var url = "http://api.flickr.com/services/feeds/photos_public.gne?" +
+                            "format=json&jsoncallback=?&tags=" + 
+                            searchTerm + "&tagmode=all";
+
+                    $.getJSON(url, function(data){
+                        var html = "";
+                        $.each(data.items, function(i, item){
+                            html += "<h2>" + item.title + "</h2>";  
+                            //html += "<img src=" + item.media.m + ">";  
+                            // replace the statement above with <p> element for date_taken data item
+                            html += "<p>" + item.date_taken + "</p>";
+                            //html += "<p><b>Tags: </b>" + item.tags + "</p>"; 
+                            // replace the statement above with item.description  
+                            html += item.description + "<br>";
+                        });
+                        $("#photos").html(html);  
+                    });
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <main>
+        Search by tags: <input type="text" size="30" id="search">
+        <input type="button" value="Search" id="btnSearch">
+        <h1>Flickr Results</h1>
+        <div id="photos"></div>
+    </main>
+</body>
+</html>

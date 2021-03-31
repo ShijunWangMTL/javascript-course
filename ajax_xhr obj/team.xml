@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<management>
+    <teammember>
+        <name>Agnes</name>
+        <title>Vice President of Accounting</title>
+        <bio>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</bio>
+    </teammember>
+    <teammember>
+        <name>Damon</name>
+        <title>Director of Development</title>
+        <bio>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</bio>
+    </teammember>
+    <teammember>
+        <name>Herbert</name>
+        <title>Director of Human Resources</title>
+        <bio>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</bio>
+    </teammember>
+    <teammember>
+        <name>Mike</name>
+        <title>Vice President of Sales and Marketing</title>
+        <bio>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</bio>
+    </teammember>
+    <teammember>
+        <name>Agnes</name>
+        <title>Vice President of Accounting</title>
+        <bio>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</bio>
+    </teammember>
+</management>
